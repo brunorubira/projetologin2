@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos/style.css" />
     <link rel="stylesheet" href="estilos/mq.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Projeto Login</title>
   </head>
   <body>
@@ -19,7 +23,39 @@
             necessitatibus ad. Nostrum corporis illum non, voluptates
             voluptatibus repellendus veritatis possimus enim optio.
           </p>
-          <form action="" method="post"></form>
+          <form action="" method="post" autocomplete="on">
+            <div id="campo">
+              <span class="material-symbols-outlined"> person </span>
+              <label for="ilogin">Login: </label>
+              <input
+                type="email"
+                name="login"
+                id="ilogin"
+                placeholder="Seu e-mail"
+                required
+                maxlength="20"
+                autocomplete="email"
+              />
+            </div>
+
+            <div id="campo">
+              <span class="material-symbols-outlined"> lock </span>
+              <label for="isenha">Senha: </label>
+
+              <input
+                type="password"
+                name="senha"
+                id="isenha"
+                placeholder="Sua senha"
+                minlength="8"
+                maxlength="20"
+                required
+                autocomplete="current-password"
+              />
+            </div>
+            <input type="submit" value="Entrar" />
+            <a href="#">Esqueci a senha</a>
+          </form>
         </div>
       </section>
     </main>
